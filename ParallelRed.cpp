@@ -12,7 +12,7 @@ int sum(const std::vector<int>& data)
     // }
 
     int result = 0;
-
+    //#pragma parallel reduction (+:sum)
     for(int i : data){
         result += i;
     }
